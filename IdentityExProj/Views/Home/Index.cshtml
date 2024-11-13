@@ -1,0 +1,8 @@
+﻿@model Dictionary<string, object>
+<div class="bg-primary panel-body"><h4>Users</h4></div>
+<table class=" table table-condended table-bordered">
+    @foreach(var m in Model)
+    {
+        <tr><th>@m.Key</th><td>@m.Value</td></tr>
+    }
+</table>
